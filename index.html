@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21BCE3585</title> <!-- Roll Number as title -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Data Processing Form</h1>
+  <label for="jsonInput">Enter JSON:</label><br>
+  <textarea id="jsonInput" placeholder='{"data": ["A","1","c","3"]}'></textarea><br>
+  <button onclick="handleSubmit()">Submit</button>
+
+  <label for="dropdown">Select Response Part:</label><br>
+  <select id="dropdown" multiple>
+    <option value="Alphabets">Alphabets</option>
+    <option value="Numbers">Numbers</option>
+    <option value="Highest Lowercase Alphabet">Highest Lowercase Alphabet</option>
+  </select>
+
+  <h2>Response:</h2>
+  <pre id="responseOutput"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
